@@ -1,55 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <title>Personal Info</title>
     <meta charset="UTF-8">
+    <meta name="keywords" content="Personal, Information, User">
+    <meta name="authors" content="Damian Śniatecki, Daniel Eryk Wojciechowski">
+    <meta name="description" content="This website contains a user personal information form.">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-<h3> Personal Information:</h3>
-<form method="post" action="additional-information.html" autocomplete="on">
-    <p>
-        <label>First name:
-            <input type="text" minlength="1" maxlength="20" placeholder="First name" autofocus/>
-        </label>
-    </p>
-    <p>
-        <label>Last name:
-            <input type="text" minlength="1" maxlength="40" placeholder="Last name" required/>
-        </label>
-    </p>
-    <p>
-        <label>Birth month:
-            <input list="months" placeholder="January"/>
-            <datalist id="months">
-                <option value="January">
-                <option value="February">
-                <option value="March">
-                <option value="April">
-                <option value="May">
-                <option value="June">
-                <option value="July">
-                <option value="August">
-                <option value="September">
-                <option value="October">
-                <option value="November">
-                <option value="December">
-            </datalist>
-        </label>
-    </p>
-    <p>
-        <label>Email address:
-            <input type="email" placeholder="name@domain.com" required> <em>name@domain.com</em>
-        </label>
-    </p>
-    <p>
-        <label>Phone number:
-            <input type="tel" placeholder="###-###-###" pattern="\d{3}-\d{3}-\d{3}"> <em>###-###-###</em>
-        </label>
-    </p>
-    <p>
-        <input type="submit" value="Submit"/>
-        <input type="reset" value="Clear"/>
-    </p>
-</form>
+<header>
+    <h3> Personal Information:</h3>
+</header>
+<section class="input_section">
+    <form method="post" action="additional-information.html" autocomplete="on">
+        <p id="form_first_name">
+            <label>First name:
+                <input type="text" minlength="1" maxlength="20" placeholder="First name" autofocus/>
+            </label>
+        </p>
+        <p id="form_last_name">
+            <label>Last name:
+                <input type="text" minlength="1" maxlength="40" placeholder="Last name" required/>
+            </label>
+        </p>
+        <p id="form_last_name_next">
+            <label>Birth month:
+                <input list="months" placeholder="January"/>
+                <datalist id="months">
+                    <option value="January">
+                    <option value="February">
+                    <option value="March">
+                    <option value="April">
+                    <option value="May">
+                    <option value="June">
+                    <option value="July">
+                    <option value="August">
+                    <option value="September">
+                    <option value="October">
+                    <option value="November">
+                    <option value="December">
+                </datalist>
+            </label>
+        </p>
+        <p>
+            <label>Email address:
+                <input type="email" placeholder="name@domain.com" required>
+                <em>name@domain.com</em>
+            </label>
+        </p>
+        <p>
+            <label>Phone number:
+                <input type="tel" placeholder="###-###-###" pattern="\d{3}-\d{3}-\d{3}"> <em>###-###-###</em>
+            </label>
+        </p>
+        <p>
+            <input id="super_submit" type="submit" value="Submit"/>
+            <input type="reset" value="Clear"/>
+        </p>
+    </form>
+
+</section>
 </body>
 </html>

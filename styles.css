@@ -15,8 +15,20 @@ header {
     text-align: center;
     font-variant: small-caps;
     background: aliceblue;
-    color: #414141;
+    color: rgba(86, 1, 1, 0.9);
     font-size: 20px;
+    text-shadow: 4px 4px 6px;
+    background: -webkit-radial-gradient(center, #6c9990, #1a0101);
+    background: -moz-radial-gradient(center, yellow, red);
+    background: radial-gradient(center, yellow, red);
+}
+
+a {
+    color: hsl(166, 96%, 41%);
+}
+
+img {
+    box-shadow: 8px 8px 8px;
 }
 
 .input_section {
@@ -40,8 +52,15 @@ section {
     opacity: 80%;
     background: #d9d8d8;
     text-align: center;
+    background: -webkit-gradient(
+            linear, left top, right top,
+            color-stop(15%, white), color-stop(50%, #4e8667),
+            color-stop(75%, #03e9b2));
+    background: -moz-linear-gradient(
+            left, white 15%, #4e8667 50%, #03e9b2 75%);
+    background: linear-gradient(
+            90deg, white 15%, #4e8667 50%, #03e9b2 75%);
 }
-
 
 #super_submit {
     color: #ca04ca;
@@ -95,4 +114,102 @@ tbody {
 
 #form_last_name_next {
     clear: both;;
+}
+
+#flying_cat_playground {
+    min-height: 300px;
+    text-align: center;
+}
+
+#flying_cat {
+    position: relative;
+    -webkit-animation: movingImage linear 10s 1s 2 alternate;
+    -moz-animation: movingImage linear 10s 1s 2 alternate;
+    animation: movingImage linear 10s 2 1s alternate;
+}
+
+@-webkit-keyframes movingImage {
+    0% {
+        opacity: 0;
+        left: 50px;
+        top: 0px;
+    }
+    25% {
+        opacity: 1;
+        left: 0px;
+        top: 50px;
+    }
+    50% {
+        opacity: 0;
+        left: 50px;
+        top: 100px;
+    }
+    75% {
+        opacity: 1;
+        left: 100px;
+        top: 50px;
+    }
+    100% {
+        opacity: 0;
+        left: 50px;
+        top: 0px;
+    }
+}
+
+@-moz-keyframes movingImage {
+    0% {
+        opacity: 0;
+        left: 50px;
+        top: 0px;
+    }
+    25% {
+        opacity: 1;
+        left: 0px;
+        top: 50px;
+    }
+    50% {
+        opacity: 0;
+        left: 50px;
+        top: 100px;
+    }
+    75% {
+        opacity: 1;
+        left: 100px;
+        top: 50px;
+    }
+    100% {
+        opacity: 0;
+        left: 50px;
+        top: 0px;
+    }
+}
+
+@keyframes movingImage {
+    0% {
+        opacity: 0;
+        left: 50px;
+        top: 0px;
+    }
+    25% {
+        opacity: 1;
+        left: 0px;
+        top: 50px;
+    }
+    50% {
+        opacity: 0;
+        left: 50px;
+        top: 100px;
+    }
+    75% {
+        opacity: 1;
+        left: 100px;
+        top: 50px;
+    }
+    100% {
+        opacity: 0;
+        left: 50px;
+        top: 0;
+    }
+
+
 }

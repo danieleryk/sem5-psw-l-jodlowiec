@@ -8,6 +8,12 @@
     <meta name="description" content="This website contains information about different programming
     languages and IT technologies.">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script>
+        function onSetColorOnClick(elementId, color) {
+            const elem = document.getElementById(elementId)
+            elem.style.color = color;
+        }
+    </script>
 </head>
 <body>
 <header>
@@ -20,7 +26,8 @@
         <ul>
             <li>Frontend:
                 <ul>
-                    <li><a href="#javascript">JavaScript:</a>
+                    <li><a href="#javascript"
+                           onclick="onSetColorOnClick('javascript_header', '#59169b')">JavaScript:</a>
                         <ol>
                             <li><em>React</em></li>
                             <li><em>Angular</em></li>
@@ -31,32 +38,33 @@
             </li>
             <li>Backend:
                 <ul>
-                    <li><a href="#java">Java:</a>
+                    <li><a href="#java" onclick="onSetColorOnClick('java_header', '#59169b')">Java:</a>
                         <ol>
                             <li><em>Spring</em></li>
                             <li><em>Dropwizard</em></li>
                             <li><em>Quarkus</em></li>
                         </ol>
                     </li>
-                    <li><a href="#javascript">Javascript:</a>
+                    <li><a href="#javascript"
+                           onclick="onSetColorOnClick('javascript_header', '#59169b')">Javascript:</a>
                         <ol>
                             <li><em>Node</em></li>
                         </ol>
                     </li>
-                    <li><a href="#python">Python:</a>
+                    <li><a href="#python" onclick="onSetColorOnClick('python_header', '#59169b')">Python:</a>
                         <ol>
                             <li><em>Flask</em></li>
                             <li><em>Django</em></li>
                         </ol>
                     </li>
-                    <li><a href="#scala">Scala</a>
+                    <li><a href="#scala" onclick="onSetColorOnClick('scala_header', '#59169b')">Scala</a>
                         <ol>
                             <li><em>Play</em></li>
                             <li><em>Http4s</em></li>
                             <li><em>Akka Http</em></li>
                         </ol>
                     </li>
-                    <li><a href="#csharp">C#:</a>
+                    <li><a href="#csharp" onclick="onSetColorOnClick('csharp_header', '#59169b')">C#:</a>
                         <ol>
                             <li><em>.NET Core</em></li>
                             <li><em>.NET Framework</em></li>
@@ -70,7 +78,7 @@
 <article>
     <h3>Programming languages description:</h3>
     <section>
-        <h4>Java</h4>
+        <h4 id="java_header">Java</h4>
         <img src="https://imagazine.pl/wp-content/uploads/2014/12/javaprob-001.png"
              height="200" width="400" alt="Logo of Java">
         <p><strong>Java &#174;</strong> is a high-level programming language developed by Sun Microsystems. It
@@ -99,7 +107,7 @@
         </details>
     </section>
     <section id="javascript">
-        <h4>JavaScript</h4>
+        <h4 id="javascript_header">JavaScript</h4>
         <img src="https://miro.medium.com/max/668/1*hcws3Wa6u9IqaEZ_4X04uw.jpeg"
              height="200" width="400" alt="Logo of JavaScript">
         <p><strong>JavaScript &#169;</strong> is a
@@ -126,7 +134,7 @@
         </details>
     </section>
     <section id="python">
-        <h4>Python</h4>
+        <h4 id="python_header">Python</h4>
         <img src="https://i.pinimg.com/originals/0f/60/19/0f6019e15f1d8ae07e7e8ea16d242676.png"
              height="200" width="400" alt="Logo of Python">
         <p><strong>Python &#9827;</strong> is an interpreted, high-level and
@@ -156,7 +164,7 @@
         </details>
     </section>
     <section id="scala">
-        <h4>Scala</h4>
+        <h4 id="scala_header">Scala</h4>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Scala-full-color.svg/1200px-Scala-full-color.svg.png"
              height="200" width="400" alt="Logo of Scala">
         <p><strong>Scala &#169;</strong> is a modern
@@ -184,7 +192,7 @@
         </details>
     </section>
     <section id="csharp">
-        <h4>C#</h4>
+        <h4 id="csharp_header">C#</h4>
         <img src="https://static.techspot.com/images2/news/bigimage/2019/09/2019-09-16-image-24.jpg"
              height="200" width="400" alt="Logo of C#">
         <p><strong>C# &#169;</strong> (pronounced <q>C-sharp</q>) is an
@@ -252,9 +260,9 @@
     </section>
 </article>
 <div id="flying_cat_playground">
-<img id="flying_cat" src="https://i.pinimg.com/originals/10/d9/63/10d9631abb9778072c1da264a6d4709a.png"
-     width="250"
-     height="250" alt="Flying cat">
+    <img id="flying_cat" src="https://i.pinimg.com/originals/10/d9/63/10d9631abb9778072c1da264a6d4709a.png"
+         width="250"
+         height="250" alt="Flying cat">
 </div>
 <footer>
     <em>Created with passion by: Damian Śniatecki & Daniel Eryk Wojciechowski</em>

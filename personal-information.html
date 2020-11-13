@@ -7,8 +7,9 @@
     <meta name="authors" content="Damian Śniatecki, Daniel Eryk Wojciechowski">
     <meta name="description" content="This website contains a user personal information form.">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="personal-information.js"></script>
 </head>
-<body>
+<body onload="setEventListeners()">
 <header>
     <h3> Personal Information:</h3>
 </header>
@@ -16,7 +17,7 @@
     <form method="post" action="additional-information.html" autocomplete="on">
         <p id="form_first_name">
             <label>First name:
-                <input type="text" minlength="1" maxlength="20" placeholder="First name" autofocus/>
+                <input id="firstNameInput" type="text" minlength="1" maxlength="20" placeholder="First name" autofocus/>
             </label>
         </p>
         <p id="form_last_name">
@@ -45,13 +46,13 @@
         </p>
         <p>
             <label>Email address:
-                <input type="email" placeholder="name@domain.com" required>
+                <input id="emailInput" type="email" placeholder="name@domain.com" required>
                 <em>name@domain.com</em>
             </label>
         </p>
         <p>
             <label>Phone number:
-                <input type="tel" placeholder="###-###-###" pattern="\d{3}-\d{3}-\d{3}"> <em>###-###-###</em>
+                <input id="phoneNumberInput" type="tel" placeholder="###-###-###" pattern="\d{3}-\d{3}-\d{3}"> <em>###-###-###</em>
             </label>
         </p>
         <p>

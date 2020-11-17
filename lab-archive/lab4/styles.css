@@ -27,10 +27,6 @@ a {
     color: hsl(166, 96%, 41%);
 }
 
-a:visited {
-    color: #660abf;
-}
-
 img {
     box-shadow: 8px 8px 8px;
 }

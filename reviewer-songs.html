@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Song reviewer</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Log, Logging">
+    <meta name="authors" content="Damian Śniatecki, Daniel Eryk Wojciechowski">
+    <link rel="stylesheet" type="text/css" href="reviewer.css">
+    <script type="text/javascript" src="reviewer-songs.js"></script>
+</head>
+<body onload="loadWebsite()">
+<header>Song Reviewer</header>
+<section>
+    <h3> Add new song!</h3>
+    <form id="addNewReviewForm" method="post" autocomplete="on">
+        <p>
+            <label>Song name <input name="songName" type="text" minlength="2" maxlength="40" placeholder="Song name"
+                                    required/></label>
+        <p>
+        <p>
+            <label>Artist <input name="artistName" type="text" minlength="1" maxlength="40" placeholder="Artist name"
+                                 required/></label>
+        <p>
+        <p>
+            <label>Youtube link <input name="songYoutubeUrl" type="url" minlength="5" maxlength="500"
+                                       placeholder="http://songcover.com" required/></label>
+        <p>
+        <p>
+            <label>Album <input name="albumName" type="text" minlength="2" maxlength="40"
+                                placeholder="Album name"/></label>
+        <p>
+        <p>
+            <label>Review <textarea name="review" rows="10" cols="30" placeholder="It blew me away !!"
+                                    required></textarea></label>
+        </p>
+        <p>
+        <p>
+            <label>Your nickname <input name="reviewerNickname" type="text" minlength="2" maxlength="40"
+                                        placeholder="Your nickname" required/></label>
+        <p>
+            <label>Your email <input name="reviewerEmail" type="email" placeholder="reviewer@domain.com"
+                                     required></label></p>
+        <p>
+            <input type="submit" value="Create review"/>
+            <input type="reset" value="Clear"/>
+        </p>
+    </form>
+</section>
+<div id="reviews"></div>
+<footer>
+    Song Reviewer 2020 &trade;
+</footer>
+</body>
+</html>

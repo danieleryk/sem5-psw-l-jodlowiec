@@ -1,0 +1,53 @@
+header {
+    background: rgba(19, 18, 18, 0.92);
+    color: #F5F5F7;
+    height: 30px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+body {
+    background: #eeeeef;
+    min-width: 250px;
+    margin: 0;
+    font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+
+section {
+    background: white;
+    box-shadow: 6px 3px 3px #646363;
+    border-radius: 4px;
+    margin: 15px 20px;
+    padding: 4px 20px;
+    border: 1px solid rgba(45, 44, 44, 0.92);
+}
+
+
+footer {
+    text-align: center;
+    background: rgba(19, 18, 18, 0.92);
+    color: #F5F5F7;
+    padding: 6px;
+}
+
+h3 {
+    margin: 5px;
+}
+
+
+section:hover {
+    box-shadow: 10px 6px 6px #373737;
+
+}
+
+input:hover {
+    border: 2px solid #06d9d9;
+    border-radius: 4px;
+}
+
+textarea:hover {
+    border: 2px solid #06d9d9;
+    border-radius: 4px;
+}
+
